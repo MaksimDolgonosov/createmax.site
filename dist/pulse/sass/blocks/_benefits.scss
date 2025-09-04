@@ -1,0 +1,36 @@
+.benefits {
+    min-height: 470px;
+    background-color: #f6f6f6;
+    padding-top: 70px;
+
+
+
+    &__items {
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 227px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__subheader {
+        font-size: 18px;
+        margin-top: 38px;
+        font-weight: 700;
+        color: #0d0d0d;
+    }
+
+    &__descr {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        color: #0d0d0d;
+        margin-top: 26px;
+    }
+}

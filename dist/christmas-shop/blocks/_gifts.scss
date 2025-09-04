@@ -1,0 +1,80 @@
+.gifts {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: url("../christmas-shop/images/bg-garland.png");
+    background-color: $primary;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    min-height: 1394px;
+    // border-top-right-radius: 20px;
+    // border-top-left-radius: 20px;
+    border-radius: 20px;
+
+    &__header {
+        max-width: 426px;
+        min-height: 144px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 150%;
+        letter-spacing: 0.20em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $static-white;
+        margin: 0 auto;
+    }
+
+    &__tabs {
+        max-width: 474px;
+        height: 40px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__tab {
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 130%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $static-white;
+        cursor: pointer;
+        height: 40px;
+        padding: 12px 20px;
+        transition: .3s all;
+
+        &.active {
+            background: $static-white-20;
+        }
+
+        &:hover {
+            transition: .3s all;
+            background: $static-white-20;
+        }
+    }
+}
+
+@media(max-width: 768px) {}
+
+@media(max-width: 576px) {}
+
+@media(max-width: 429px) {
+    .gifts {
+        &__header {
+            max-width: 364px;
+        }
+
+        &__tabs {
+            max-width: 354px;
+            font-size: 12px;
+        }
+        &__tab {
+            padding: 12px 8px;
+        }
+    }
+}
+
+@media(max-width: 380px) {}

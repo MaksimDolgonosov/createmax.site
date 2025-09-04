@@ -1,0 +1,167 @@
+.about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 648px;
+    background-color: $primary;
+    background-image: url("../christmas-shop/images/bg-snow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__container {
+        margin: 0 auto;
+        max-width: 1276px;
+        min-height: 528px;
+        border-radius: 20px;
+        background-color: $static-white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__descr {
+
+        width: 50%;
+        height: 100%;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        padding-top: 160px;
+        padding-left: 60px;
+        padding-right: 60px;
+
+        h5 {
+            @include caption_font;
+            color: $primary;
+        }
+
+        h3 {
+            width: 426px;
+            height: 72px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 152%;
+            letter-spacing: 0.19em;
+            text-transform: uppercase;
+            color: $dark;
+            margin: 20px 0;
+        }
+
+        &_text {
+            width: 426px;
+            height: 72px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 148%;
+            letter-spacing: 0.063em;
+            color: $dark;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        height: 528px;
+        // height: 100%;
+        border-radius: 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .about {
+        &__container {
+            max-width: 752px;
+
+        }
+
+        &__descr {
+            padding-top: 0;
+
+            h3 {
+                width: 262px;
+                height: 109px;
+            }
+
+            &_text {
+                width: 262px;
+                height: 143px;
+            }
+        }
+
+
+    }
+
+
+}
+
+@media(max-width: 640px) {
+    .about {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__descr {
+            width: 100%;
+            height: 50%;
+            padding-top: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+
+            h3 {
+                margin: 20px auto;
+            }
+
+            &_text {
+                margin: 10px auto;
+            }
+        }
+
+
+
+        &__img {
+            width: 100%;
+            height: 50%;
+        }
+    }
+}
+
+@media(max-width: 429px) {
+    .about {
+        &__container {
+            width: 364px;
+            flex-direction: column;
+        }
+
+        &__descr {
+            padding-top: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 100%;
+            min-height: 352px;
+            text-align: left;
+
+            h3 {
+                width: 325px;
+                height: 72px;
+            }
+
+            &_text {
+                width: 325px;
+            }
+
+        }
+
+        &__img {
+            width: 100%;
+            height: 528px;
+        }
+    }
+}
+
+@media(max-width: 380px) {}

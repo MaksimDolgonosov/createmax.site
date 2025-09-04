@@ -1,0 +1,159 @@
+.modal {
+
+    position: fixed;
+    top: 0;
+    // left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: $overlay;
+    transition: .3s all;
+    z-index: 100;
+
+    &_close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+    }
+
+    &__item {
+        position: relative;
+        width: 400px;
+        height: 514px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-self: center;
+        border-radius: 20px;
+        background: $content-background;
+        transition: .3s all;
+        cursor: pointer;
+
+
+        &-img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 100%;
+            height: 230px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-descr {
+            width: 100%;
+            height: 284px;
+            border-radius: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background: $static-white;
+
+            &-header {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 130%;
+                letter-spacing: 0.09em;
+                text-transform: uppercase;
+
+                &.harmony {
+                    color: $tag-pink;
+                }
+
+                &.work {
+                    color: $tag-purple;
+                }
+
+                &.health {
+                    color: $tag-green;
+                }
+            }
+
+            &-text {
+                margin-top: 8px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 152%;
+                letter-spacing: 0.10em;
+                text-transform: uppercase;
+                color: $dark;
+            }
+
+            &-description {
+                margin-top: 8px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 148%;
+                color: $dark;
+            }
+
+            &-rating {
+                margin-top: 20px;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 130%;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: $dark;
+            }
+
+            &-superpowers {
+                margin-top: 8px;
+
+                &-item {
+                    width: 100%;
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                }
+
+                &-name {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 148%;
+                    color: $dark;
+                    width: 40%;
+                }
+
+                &-rating {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 148%;
+                    color: $dark;
+                    margin-left: auto;
+                    margin-right: 12px;
+                }
+
+                &-stars {
+                    width: 112px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    img {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 429px) {
+    .modal {
+
+
+        &__item {
+            width: 360px;
+        }
+    }
+}
+
+@media(max-width: 380px) {}

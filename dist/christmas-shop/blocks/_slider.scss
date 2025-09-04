@@ -1,0 +1,156 @@
+.slider {
+    padding-top: 60px;
+    height: 488px;
+    background: url("../christmas-shop/images/bg-snow.png");
+    background-color: $primary;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    h5 {
+        @include caption_font;
+        text-align: center;
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 152%;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $static-white;
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+
+    &__wrapper {
+        max-width: 100%;
+        // max-width: 1276px;
+        height: 200px;
+        margin: 0 0 20px 82px;
+        //margin: 0 auto 20px auto;
+        overflow: hidden;
+        transition: .3s all;
+    }
+
+    &__items {
+        width: 1993px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: .3s all;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 20px;
+
+        h4 {
+            font-weight: 600;
+            font-size: 80px;
+            text-transform: uppercase;
+            text-align: center;
+            color: $static-white;
+            margin-right: 20px;
+            letter-spacing: 0.02em;
+        }
+
+        img {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+        }
+    }
+
+    &__pagination {
+        width: 132px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 82px;
+        margin-left: auto;
+
+        button {
+            display: block;
+            border: 1px solid $static-white;
+            border-radius: 20px;
+            width: 56px;
+            height: 56px;
+            cursor: pointer;
+            background-color: $primary;
+            transition: .3s all;
+
+            svg {
+                path {
+                    stroke: white;
+                    stroke-opacity: 1;
+                }
+            }
+
+            &:hover {
+                background-color: $static-white;
+
+                svg {
+                    path {
+                        stroke: #FF4646;
+                    }
+                }
+            }
+
+            &.disabled {
+                border: 1px solid $static-white-40;
+
+                svg {
+                    path {
+                        // stroke: $static-white;
+                        stroke-opacity: 0.4;
+                    }
+                }
+
+                &:hover {
+                    background-color: $primary;
+
+                    svg {
+                        path {
+                            stroke: white;
+                            stroke-opacity: 0.4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width: 768px) {
+    .slider {
+        &__wrapper {
+
+            margin: 0 0 20px 8px;
+
+        }
+
+        &__pagination {
+            margin-right: 8px;
+        }
+    }
+
+}
+
+@media(max-width: 576px) {}
+
+@media(max-width: 429px) {
+
+    // .slider {
+    //     &__items {
+    //         overflow: hidden;
+    //     }
+    // }
+}
+
+@media(max-width: 380px) {}

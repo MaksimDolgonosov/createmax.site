@@ -1,0 +1,152 @@
+.cta {
+    min-height: 668px;
+    background: url("../christmas-shop/images/bg-snow.png"), url("../christmas-shop/images/bg-forest.png");
+    background-color: $primary;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    // background-size: 100%;
+    padding-top: 180px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    h3 {
+        width: 426px;
+        height: 108px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 152%;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $static-white;
+        margin: 0 auto;
+    }
+
+    a {
+        display: block;
+        border-radius: 20px;
+        // padding: 20px 32px;
+        width: 235px;
+        height: 56px;
+        color: $static-white;
+        text-decoration: none;
+        background: $dark;
+        margin: 20px auto;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        text-align: center;
+        transition: .3s all;
+        border: none;
+        cursor: pointer;
+        line-height: 56px;
+        // a {
+        //     color: $static-white;
+        //     text-decoration: none;
+        // }
+
+        &:hover {
+            a {
+                color: $dark;
+            }
+
+            @include btn-hover;
+            transition: .3s all;
+        }
+    }
+
+    h5 {
+        @include caption_font;
+        text-align: center;
+    }
+
+    &__timer {
+        border-radius: 20px;
+        width: 344px;
+        height: 72px;
+        display: flex;
+        padding: 8px 12px 12px 12px;
+        margin: 8px auto;
+        background: $static-white-40;
+        color: $static-white;
+
+        &-item {
+            position: relative;
+            width: 80px;
+            height: 52px;
+
+            &-number {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 152%;
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+                text-align: center;
+
+            }
+
+            &-descr {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 130%;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            &:nth-of-type(1) {
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+
+                &::after {
+                    content: "";
+                    width: 1px;
+                    height: 40px;
+                    background-color: #fff;
+                    position: absolute;
+                    top: 10px;
+                    right: 0px;
+
+                }
+            }
+
+            &:nth-of-type(2),
+            &:nth-of-type(3) {
+                &::after {
+                    content: "";
+                    width: 1px;
+                    height: 40px;
+                    background-color: #fff;
+                    position: absolute;
+                    top: 10px;
+                    right: 0px;
+
+                }
+            }
+
+            &:nth-of-type(4) {
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {}
+
+@media(max-width: 576px) {}
+
+@media(max-width: 429px) {
+    .cta {
+        min-height: 704px;
+
+        h3 {
+            width: 100%;
+            height: 145px;
+        }
+    }
+}
+
+@media(max-width: 380px) {}
