@@ -1,0 +1,98 @@
+.usage {
+    &__items {
+        padding: 60px 10px 0 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        grid-auto-rows: 270px;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    &__item {
+        width: 270px;
+        height: 270px;
+        border: 1px solid black;
+        padding: 30px 30px 25px 30px;
+
+
+        &-img {
+            min-height: 65px;
+        }
+
+        &-header {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        &-text {
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    #Jq {
+        height: 37px;
+        width: 161px;
+        margin-bottom: 15px;
+        margin-top: 13px;
+    }
+
+    &__wrapper {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        column-gap: 45px;
+        row-gap: 30px;
+
+        &-item {
+            display: grid;
+            grid-template-columns: 250px 100px;
+            grid-template-rows: repeat(2, 35px);
+        }
+
+        &-header {
+            position: relative;
+            padding-left: 15px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+
+            @include before_circle;
+
+            &::before {
+                left: 0px;
+            }
+        }
+
+        &-perc {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            justify-self: end;
+        }
+
+        &-line {
+            grid-row: 2/3;
+            width: 350px;
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+            align-self: end;
+
+            &-subline {
+                height: 14px;
+                background-color: $main_color;
+                // width: 256px;
+                border-radius: 4px;
+            }
+        }
+
+    }
+
+}

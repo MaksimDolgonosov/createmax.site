@@ -1,0 +1,57 @@
+.title {
+    font-weight: 700;
+
+    &_fz14 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    &_fz16 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &_fz36 {
+        font-size: 36px;
+        line-height: 60px;
+    }
+
+    &_fz48 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    &__section_title {
+        position: relative;
+        text-align: center;
+        margin-top: 100px;
+        font-size: 17px;
+        @include before_circle;
+
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__section_subtitle {
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    &__section_line {
+        margin: 0 auto;
+        width: 60px;
+        height: 2px;
+        background-color: $main_color;
+        // border: 2px solid $main_color;
+        margin-top: 25px;
+        border-radius: 50px;
+    }
+
+}

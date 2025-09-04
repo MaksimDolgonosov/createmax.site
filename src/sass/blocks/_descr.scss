@@ -1,0 +1,107 @@
+.descr {
+    padding-top: 136px;
+
+    &__img {
+        width: 400px;
+        height: 100%;
+    }
+
+    &__aboutMe {
+        width: 570px;
+        min-height: 240px;
+    }
+
+    &__title {
+        position: relative;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-weight: 700;
+        @include before_circle;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+    }
+
+    &__line {
+        width: 60px;
+        height: 0px;
+        border: 2px solid $main_color;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border-radius: 50px;
+    }
+
+    &__text {
+        margin-top: 6px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    &__items {
+        width: 570px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(260px, auto));
+        grid-template-rows: repeat(2, minmax(80px, auto));
+        grid-auto-rows: minmax(116px, auto);
+        align-items: start;
+        column-gap: 50px;
+        row-gap: 20px;
+    }
+
+    &__item {
+        position: relative;
+        width: 260px;
+        display: grid;
+        grid-template-columns: 40px 200px;
+        grid-template-rows: minmax(20px, auto) minmax(80px, auto);
+        column-gap: 20px;
+        row-gap: 6px;
+
+        @include before_circle;
+
+        &:before {
+            top: 0%;
+            left: 0px;
+        }
+
+    }
+
+    &__itemImg {
+        display: inline;
+        margin-top: 15px;
+        margin-left: 17px;
+        grid-column: 1/2;
+        grid-row: 1/3;
+
+    }
+
+    &__header {
+        font-size: 14px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    &__description {
+        margin-top: 6px;
+        font-size: 12px;
+    }
+
+    &__gridContainer {
+        display: grid;
+        // width: 1040px;
+        // min-height: 604px;
+        grid-template-columns: 453px 570px;
+        grid-template-rows: minmax(240px, auto) minmax(334px, auto);
+        grid-auto-rows: minmax(230px, auto);
+        column-gap: 70px;
+        row-gap: 30px;
+    }
+}
+
+#descr_el1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}

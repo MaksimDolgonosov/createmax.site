@@ -1,0 +1,12 @@
+.btn {
+    font-size: 14px;
+    background: $main_color;
+    height: 45px;
+    padding: 12px 25px;
+    transition: 0.4s all;
+
+    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover {
+        box-shadow: 3px 3px 15px $main_color;
+    }
+}
