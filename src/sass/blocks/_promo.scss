@@ -3,9 +3,10 @@
   min-height: 100vh;
   background: url("../img/newImages/main-gradient.png") no-repeat 50% / cover;
   background-color: #111723;
-  padding-top: 170px;
-  box-shadow: 0 10px 5px rgb(59, 59, 59);
-
+  // padding-top: 170px;
+  padding-top: 150px;
+  // box-shadow: 0 10px 5px rgb(59, 59, 59);
+  border-bottom: 1px solid azure;
   .title {
     display: block;
     width: 60%;

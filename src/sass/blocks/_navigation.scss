@@ -1,0 +1,35 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  left: calc(50% - 570px);
+  height: 81px;
+  background-color: #111723;
+  z-index: 99;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  .container {
+    border: 1px solid #414a5a;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  &__list {
+    width: 1140px;
+    height: 80px;
+    margin: 0px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__link {
+    display: block;
+    a {
+      color: azure;
+      text-decoration: none;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+}
