@@ -6,7 +6,8 @@
   // padding-top: 170px;
   padding-top: 150px;
   // box-shadow: 0 10px 5px rgb(59, 59, 59);
-  border-bottom: 1px solid azure;
+  border-bottom: 1px solid #414a5a;
+
   .title {
     display: block;
     width: 60%;
@@ -60,12 +61,14 @@
   }
 
   &__btns {
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 20px;
+    margin-bottom: 30px;
     width: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // border-radius: 20px;
   }
 
   .promo__link {
@@ -73,7 +76,7 @@
     justify-content: center;
     align-items: center;
     color: rgb(240, 240, 240);
-    font-weight: bold;
+    font-weight: 400;
     font-size: 16px;
     border: none;
     text-decoration: none;

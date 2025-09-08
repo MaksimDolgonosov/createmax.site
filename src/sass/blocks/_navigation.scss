@@ -1,7 +1,8 @@
 .navigation {
   position: fixed;
   top: 0;
-  left: calc(50% - 570px);
+  left: 50%;
+  transform: translateX(-50%);
   height: 81px;
   background-color: #111723;
   z-index: 99;
@@ -14,7 +15,7 @@
   }
 
   &__list {
-    width: 1140px;
+    width: 100%;
     height: 80px;
     margin: 0px;
 
@@ -30,6 +31,35 @@
       font-size: 16px;
       text-transform: uppercase;
       font-weight: 300;
+      img {
+        width: 70px;
+      }
+      &#logo {
+        font-weight: 400;
+        // font-family: "Playpen Sans", cursive;
+      }
+      &#lang {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2px;
+        //background: linear-gradient(90deg, rgb(244, 42, 139) 0%, rgb(59, 154, 227) 100%);
+        background: linear-gradient(90deg, #e100ff 0%, #1590ee 100%);
+        width: 70px;
+        height: 30px;
+        border-radius: 20px;
+        span {
+          margin-left: 10px;
+          display: block;
+          font-weight: 400;
+          // font-weight: 300;
+          // font-size: 14px;
+        }
+        img {
+          width: 28px;
+          height: 28px;
+        }
+      }
     }
   }
 }
