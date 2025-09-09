@@ -1,7 +1,7 @@
 .hamburger {
-  position: absolute;
-  top: 20px;
-  right: 30px;
+  // position: absolute;
+  // top: 20px;
+  // right: 30px;
   height: 20px;
   width: 36px;
   display: none;
@@ -9,7 +9,8 @@
   justify-content: space-between;
   align-items: flex-end;
   cursor: pointer;
-
+  margin-left: auto;
+  margin-right: 20px;
   span {
     display: block;
     height: 3px;

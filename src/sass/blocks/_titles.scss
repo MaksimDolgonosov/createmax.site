@@ -1,9 +1,9 @@
 .title {
-  display: inline-block;
+  display: block;
   //   width: 400px;
   //text-align: center;
   //   margin: 30px auto;
-  line-height: 52px;
+  //   line-height: 52px;
   font-weight: 400;
   background: linear-gradient(90deg, #e100ff 0, #1590ee 100%);
   background-clip: text;
@@ -38,14 +38,14 @@
   &__section_title {
     position: relative;
     text-align: center;
-    margin-top: 100px;
-    font-size: 17px;
-    @include before_circle;
+    margin-top: 20px;
 
-    &:before {
-      left: 50%;
-      transform: translateX(-50%);
-    }
+    // @include before_circle;
+
+    // &:before {
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    // }
   }
 
   &__section_subtitle {
