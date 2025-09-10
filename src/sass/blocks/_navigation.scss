@@ -31,7 +31,27 @@
       font-size: 16px;
       text-transform: uppercase;
       font-weight: 300;
+      &#logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #letter-logo {
+        padding: 3px;
+        text-align: left;
+        width: 78px;
+        height: 80px;
+        // line-height: 80px;
+        display: block;
+        background: linear-gradient(90deg, #e100ff 0%, #1590ee 100%);
+        background-clip: text;
+        color: transparent;
+        font-size: 70px;
+        font-family: "Condiment", cursive;
+        font-weight: 400;
+      }
       img {
+        transform: rotateZ(360deg) rotateX(180deg);
         width: 70px;
       }
       &#logo {

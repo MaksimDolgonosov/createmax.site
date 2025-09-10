@@ -175,8 +175,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return promo; });
 function promo() {
   const promoWrapper = document.querySelector(".promo");
-  const main = ["../img/interier/main1.jpg", "../img/interier/main2Cut.jpg"];
-  const mainMobile = ["../img/interier/cups.jpg", "../img/interier/main-mobile.jpg"];
+  const main = ["img/interier/main1.jpg", "img/interier/main2Cut.jpg"];
+  const mainMobile = ["img/interier/cups.jpg", "img/interier/main-mobile.jpg"];
   let i = 0;
 
   if (window.innerWidth < 769) {
