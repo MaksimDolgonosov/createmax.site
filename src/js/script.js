@@ -4,6 +4,8 @@ window.addEventListener("DOMContentLoaded", () => {
     const close = document.querySelector(".menu__close");
     const overlay = document.querySelector(".menu__overlay");
 
+    document.querySelector("#year").textContent = `${new Date().getFullYear()}`
+
     hamburger.addEventListener("click", () => {
         menu.classList.add("active");
     });
