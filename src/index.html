@@ -438,9 +438,9 @@
           </div>
           <div class="contacts__descr">
             
-            <h2 class="title title_fz36 contacts__subtitle">Есть проект для обсуждения?</h2>
-            <div class="contacts__line"></div>
-            <div class="title title_fz20 contacts__way">Напишите мне</div>
+            <h2 class=" contacts__subtitle">Есть проект для обсуждения?</h2>
+            <!-- <div class="contacts__line"></div> -->
+            <div class="title title_fz20 contacts__way after-logo">Напишите мне</div>
             <div class="contacts__social">
               <a href="https://github.com/MaksimDolgonosov" class="menu__socialItem" target="_blank">
                 <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -479,22 +479,22 @@
                 </svg>
               </a>
             </div>
-            <div class="title title_fz14 contacts__way">Или оставьте ваши данные и я сам вам напишу:</div>
+            <div class="title title_fz14 contacts__way without-logo">Или оставьте ваши данные и я сам вам напишу:</div>
             <form action="#" class="contacts__form">
               <div class="contacts__form-input">
-                <input required name="name" id="name" type="text" placeholder="Макс" />
-                <label for="name">Ваше имя</label>
+                <input required name="name" id="name" type="text" placeholder="Введите ваше имя" />
+                <!-- <label for="name">Ваше имя</label> -->
               </div>
               <div class="contacts__form-input">
-                <input required name="email" id="email" type="text" />
-                <label for="email">Ваша почта</label>
+                <input required name="email" id="email" type="text" placeholder="Введите ваш email" />
+                <!-- <label for="email">Ваша почта</label> -->
               </div>
               <div class="contacts__form-textarea">
-                <textarea name="text" id="text"></textarea>
-                <label for="text">Ваше сообщение</label>
+                <textarea required name="text" id="text" placeholder="Введите ваше сообщение"></textarea>
+                <!-- <label for="text">Ваше сообщение</label> -->
               </div>
               <div class="contacts__form-button">
-                <button class="btn" button>Отправить сообщение</button>
+                <button class="btn" button>Отправить</button>
                 <div class="contacts__form-button-policy">
                   <input required name="checkbox" id="checkbox" type="checkbox" />
                   <span>Я согласен(а) с <a href="/policy.html" target="_blank">политикой конфиденциальности</a> </span>
@@ -505,6 +505,82 @@
         </div>
       </div>
     </section>
+<!-- <footer>
+      <div class="background">
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 1600 900"
+        >
+          <defs>
+            <path
+              id="wave"
+              fill="rgba(11, 89, 255, 0.6)"
+              d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+      s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+            />
+          </defs>
+          <g>
+            <use xlink:href="#wave" opacity=".4">
+              <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                dur="8s"
+                calcMode="spline"
+                values="270 230; -334 180; 270 230"
+                keyTimes="0; .5; 1"
+                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                repeatCount="indefinite"
+              />
+            </use>
+            <use xlink:href="#wave" opacity=".6">
+              <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                dur="6s"
+                calcMode="spline"
+                values="-270 230;243 220;-270 230"
+                keyTimes="0; .6; 1"
+                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                repeatCount="indefinite"
+              />
+            </use>
+            <use xlink:href="#wave" opacty=".9">
+              <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                dur="4s"
+                calcMode="spline"
+                values="0 230;-140 200;0 230"
+                keyTimes="0; .4; 1"
+                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                repeatCount="indefinite"
+              />
+            </use>
+          </g>
+        </svg>
+      </div>
+      <section>
+        <ul class="socials">
+          <li><a class="fa-brands fa-github"></a></li>
+          <li><a class="fa-brands fa-codepen"></a></li>
+          <li><a class="fa-brands fa-dribbble"></a></li>
+          <li><a class="fa-brands fa-instagram"></a></li>
+        </ul>
+        <ul class="links">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Skills</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+        <p class="legal">© 2025 All rights reserved</p>
+      </section>
+    </footer> -->
     <div class="overlay">
       <div class="modal_thanks">
         <span>Спасибо, я с вами непременно свяжусь!</span>

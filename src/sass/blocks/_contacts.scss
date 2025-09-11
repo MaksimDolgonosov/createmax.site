@@ -1,5 +1,7 @@
 .contacts {
+  width: 100%;
   &__wrapper {
+    width: 100%;
     padding: 30px 36px 40px 50px;
     display: grid;
     grid-template-columns: 455px 532px;
@@ -18,19 +20,21 @@
   }
 
   &__subtitle {
+    display: block;
     background: linear-gradient(90deg, #e100ff 0, #1590ee 100%);
     background-clip: text;
     color: transparent;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 32px;
     line-height: 60px;
+    width: 100%;
     // color: azure;
   }
 
   &__line {
     width: 60px;
     height: 2px;
-    background-color: $main_color;
+    background: $main_color;
     margin-top: 5px;
     margin-bottom: 20px;
     border-radius: 50px;
@@ -38,20 +42,25 @@
 
   &__way {
     position: relative;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     line-height: 35px;
     margin-left: 40px;
     color: azure;
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../../icons/contact-icon.svg");
-      background-repeat: no-repeat;
-      top: 5px;
-      left: -38px;
-      right: 0;
-      bottom: 0;
+    &.after-logo {
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../../icons/contact-icon.svg");
+        background-repeat: no-repeat;
+        top: 5px;
+        left: -38px;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    &.without-logo {
+      margin-left: 0;
     }
   }
 
@@ -65,7 +74,7 @@
       transform: rotate(90deg);
       margin-right: 20px;
       path {
-        fill: #b700ff;
+        fill: #9900ff;
       }
     }
   }
@@ -85,9 +94,17 @@
         padding: 0 20px;
         width: 256px;
         height: 45px;
-        font-weight: 500;
-        font-size: 12px;
+        font-weight: 400;
+        font-size: 16px;
         line-height: 18px;
+        border: 1px solid #414a5a;
+        border-radius: 10px;
+        background: transparent;
+        color: #fff;
+        margin: 0 0 26px 0;
+        padding: 20px 25px;
+        outline: none;
+        resize: none;
       }
 
       label {
@@ -113,9 +130,16 @@
         width: 532px;
         height: 194px;
         padding: 20px;
-        font-weight: 500;
-        font-size: 12px;
+        font-weight: 400;
+        font-size: 16px;
         line-height: 18px;
+        border: 1px solid #414a5a;
+        border-radius: 20px;
+        background: transparent;
+        color: #fff;
+        margin: 0 0 26px 0;
+        padding: 20px 25px;
+        outline: none;
         resize: none;
       }
 
@@ -145,8 +169,10 @@
         // width: 219px;
         // height: 45px;
         font-weight: 700;
-        font-size: 14px;
-        line-height: 21px;
+        font-size: 16px;
+        // line-height: 21px;
+        color: white;
+        font-weight: 400;
       }
 
       &-policy {
@@ -162,6 +188,7 @@
           font-weight: 500;
           font-size: 12px;
           line-height: 12px;
+          color: white;
         }
       }
     }

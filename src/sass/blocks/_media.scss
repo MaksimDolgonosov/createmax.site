@@ -110,7 +110,6 @@
           height: 150px;
           padding: 20px;
           font-weight: 500;
-          font-size: 12px;
           line-height: 18px;
           resize: none;
         }
@@ -230,7 +229,7 @@
           height: 150px;
           padding: 20px;
           font-weight: 500;
-          font-size: 12px;
+
           line-height: 18px;
           resize: none;
         }
@@ -370,104 +369,111 @@
     &__subtitle {
       font-size: 22px;
     }
-
-    .price {
-      &__items {
-        padding: 20px 0 0 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 290px);
-        justify-content: center;
-        grid-template-rows: repeat(3, minmax(25px, auto));
-        // column-gap: 25px;
-        // row-gap: 15px;
-      }
-
-      &__item {
-        padding-left: 25px;
-        display: grid;
-        grid-template-columns: 180px 70px;
-        grid-template-rows: minmax(22px, auto) minmax(35px, auto);
-
-        &-text {
-          align-self: start;
-        }
-      }
+  }
+  .price {
+    &__items {
+      padding: 20px 0 0 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 290px);
+      justify-content: center;
+      grid-template-rows: repeat(3, minmax(25px, auto));
+      // column-gap: 25px;
+      // row-gap: 15px;
     }
 
-    .contacts {
-      h2 {
-        font-size: 24px;
+    &__item {
+      padding-left: 25px;
+      display: grid;
+      grid-template-columns: 180px 70px;
+      grid-template-rows: minmax(22px, auto) minmax(35px, auto);
+
+      &-text {
+        align-self: start;
+      }
+    }
+  }
+
+  .contacts {
+    &__subtitle {
+      font-size: 28px;
+      line-height: 40px;
+      width: 100%;
+      font-weight: 500;
+      // color: azure;
+    }
+
+    &__wrapper {
+      padding: 0px 0px 30px 0px;
+      display: grid;
+      grid-template-columns: 100%;
+    }
+
+    &__form {
+      margin-top: 30px;
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: center;
+      //   align-items: center;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 45px 45px 150px minmax(45px, auto);
+      row-gap: 25px;
+
+      input {
+        width: 100%;
       }
 
-      &__wrapper {
-        padding: 60px 0px 30px 0px;
-        display: grid;
-        grid-template-columns: 100%;
-      }
+      &-textarea {
+        position: relative;
+        grid-column: 1/2;
 
-      &__form {
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 45px 45px 150px minmax(45px, auto);
-        row-gap: 25px;
-
-        input {
+        textarea {
           width: 100%;
         }
+      }
 
-        &-textarea {
-          position: relative;
-          grid-column: 1/2;
+      &-button {
+        grid-column: 1/2;
+        display: flex;
 
-          textarea {
-            width: 100%;
-          }
+        width: 100%;
+        flex-wrap: wrap;
+
+        // grid-template-columns:100%;
+        // grid-template-rows: 45px 45px;
+        // row-gap: 10px;
+        .btn {
+          order: 2;
+          border: none;
+          width: 100%;
+          height: 45px;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 21px;
         }
 
-        &-button {
-          grid-column: 1/2;
+        &-policy {
+          margin: 0 auto;
           display: flex;
+          width: 200px;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 15px;
 
-          width: 100%;
-          flex-wrap: wrap;
-
-          // grid-template-columns:100%;
-          // grid-template-rows: 45px 45px;
-          // row-gap: 10px;
-          .btn {
-            order: 2;
-            border: none;
-            width: 100%;
-            height: 45px;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 21px;
+          input {
+            width: 30px;
+            margin-right: 0px;
           }
 
-          &-policy {
-            margin: 0 auto;
-            display: flex;
-            width: 200px;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
+          span {
+            width: 170px;
+            // align-self: center;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 12px;
 
-            input {
-              width: 30px;
-              margin-right: 0px;
-            }
-
-            span {
-              width: 170px;
-              // align-self: center;
-              font-weight: 500;
-              font-size: 12px;
-              line-height: 12px;
-
-              a {
-                display: inline;
-              }
+            a {
+              display: inline;
             }
           }
         }
