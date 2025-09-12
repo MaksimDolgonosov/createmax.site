@@ -17,36 +17,36 @@ window.addEventListener("DOMContentLoaded", () => {
     overlay.addEventListener("click", closeMenu);
 
 
-    const usagePercents = document.querySelectorAll(".usage__wrapper-perc");
-    const subLine = document.querySelectorAll(".usage__wrapper-line-subline");
-
-    usagePercents.forEach((item, i) => {
-        subLine[i].style.width = item.innerHTML;
-    });
-
-
-    const social = document.querySelector(".sidepanel__text");
-    const divider = document.querySelector(".sidepanel__divider");
-    const socialSvg = document.querySelectorAll(".sidepanel__link svg path");
+//     const usagePercents = document.querySelectorAll(".usage__wrapper-perc");
+//     const subLine = document.querySelectorAll(".usage__wrapper-line-subline");
+// console.log(subLine)
+//     usagePercents.forEach((item, i) => {
+//         subLine[i].style.width = item.innerHTML;
+//     });
 
 
+    // const social = document.querySelector(".sidepanel__text");
+    // const divider = document.querySelector(".sidepanel__divider");
+    // const socialSvg = document.querySelectorAll(".sidepanel__link svg path");
 
 
-    window.addEventListener("scroll", () => {
-        if (document.documentElement.scrollTop >= 480) {
-            social.classList.add("mainColToSocial");
-            divider.classList.add("mainColToDivider");
-            socialSvg.forEach(el => {
-                el.classList.add("mainColToSocialLink");
-            });
-        } else {
-            social.classList.remove("mainColToSocial");
-            divider.classList.remove("mainColToDivider");
-            socialSvg.forEach(el => {
-                el.classList.remove("mainColToSocialLink");
-            });
-        }
-    });
+
+
+    // window.addEventListener("scroll", () => {
+    //     if (document.documentElement.scrollTop >= 480) {
+    //         social.classList.add("mainColToSocial");
+    //         divider.classList.add("mainColToDivider");
+    //         socialSvg.forEach(el => {
+    //             el.classList.add("mainColToSocialLink");
+    //         });
+    //     } else {
+    //         social.classList.remove("mainColToSocial");
+    //         divider.classList.remove("mainColToDivider");
+    //         socialSvg.forEach(el => {
+    //             el.classList.remove("mainColToSocialLink");
+    //         });
+    //     }
+    // });
 
     // отправка формы
     const forms = document.querySelectorAll("form");
@@ -144,44 +144,44 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // Scrolling with raf
 
-    let links = document.querySelectorAll('[href^="#"]');
-    let speed = 0.2;
-    // console.log(links);
-    links.forEach(link => {
-        if (link.getAttribute("href") != "#") {
+    // let links = document.querySelectorAll('[href^="#"]');
+    // let speed = 0.2;
+    // // console.log(links);
+    // links.forEach(link => {
+    //     if (link.getAttribute("href") != "#") {
 
-            link.addEventListener('click', function (event) {
-                event.preventDefault();
+    //         link.addEventListener('click', function (event) {
+    //             event.preventDefault();
 
-                let widthTop = document.documentElement.scrollTop,
-                    hash = this.hash,
-                    toBlock = document.querySelector(hash).getBoundingClientRect().top, // метод, позволяющий получить количество пикселей до элемента(его верхней границы)
-                    start = null;
+    //             let widthTop = document.documentElement.scrollTop,
+    //                 hash = this.hash,
+    //                 toBlock = document.querySelector(hash).getBoundingClientRect().top, // метод, позволяющий получить количество пикселей до элемента(его верхней границы)
+    //                 start = null;
 
-                requestAnimationFrame(step);
+    //             requestAnimationFrame(step);
 
-                function step(time) { //time - время, прошедшее с момента начала загрузки страницы в милисекундах. Это callback функция requestAnimationFrame
+    //             function step(time) { //time - время, прошедшее с момента начала загрузки страницы в милисекундах. Это callback функция requestAnimationFrame
 
-                    if (start === null) {
-                        start = time;
-                    }
+    //                 if (start === null) {
+    //                     start = time;
+    //                 }
 
-                    let progress = time - start;
+    //                 let progress = time - start;
 
-                    let r = (toBlock < 0 ? Math.max(widthTop - progress / speed, widthTop + toBlock) : Math.min(widthTop + progress / speed, widthTop + toBlock));
+    //                 let r = (toBlock < 0 ? Math.max(widthTop - progress / speed, widthTop + toBlock) : Math.min(widthTop + progress / speed, widthTop + toBlock));
 
-                    document.documentElement.scrollTo(0, r);
+    //                 document.documentElement.scrollTo(0, r);
 
-                    if (r != widthTop + toBlock) {
-                        requestAnimationFrame(step);
-                    } else {
-                        location.hash = hash;
-                    }
-                }
+    //                 if (r != widthTop + toBlock) {
+    //                     requestAnimationFrame(step);
+    //                 } else {
+    //                     location.hash = hash;
+    //                 }
+    //             }
 
-            });
-        }
-    });
+    //         });
+    //     }
+    // });
 
 
 

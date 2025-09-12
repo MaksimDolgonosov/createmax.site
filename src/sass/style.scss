@@ -6,6 +6,9 @@
 @import "base/variables";
 @import "base/mixins";
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   position: relative;
   // background: #f3f3f5;

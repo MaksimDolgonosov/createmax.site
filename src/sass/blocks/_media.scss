@@ -521,3 +521,20 @@
     }
   }
 }
+@media (max-width: 389px) {
+  footer {
+    .background {
+      height: 420px;
+      svg {
+        max-height: 420px;
+        min-height: 380px;
+      }
+    }
+    .links {
+      flex-direction: column;
+      li {
+        text-align: center;
+      }
+    }
+  }
+}
