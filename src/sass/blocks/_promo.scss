@@ -27,7 +27,7 @@
     height: 100%;
   }
   &__photo {
-    background: url("../img/newImages/code3.png");
+    // background: url("../img/newImages/code3.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -46,8 +46,8 @@
 
     // }
     img {
-      width: 60%;
-      height: 60%;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       // width: 520px;
       // height: 600px;
