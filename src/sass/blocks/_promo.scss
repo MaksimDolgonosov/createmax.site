@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  min-height: 100vh;
+  height: calc(100vh - 82px);
   background: url("../img/newImages/main-gradient.png") no-repeat 50% / cover;
   background-color: #111723;
   margin-top: 82px;
@@ -34,9 +34,9 @@
   }
   &__photo {
     // background: url("../img/pngwing.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-size: cover;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -45,7 +45,7 @@
     // position: relative;
     // align-self: flex-end;
     width: 45%;
-    height: 100vh;
+    height: 100%;
     // &::after {
     //   content: "";
     //   position: absolute;
@@ -57,7 +57,7 @@
 
     // }
     img {
-      display: block;
+      // display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -143,5 +143,45 @@
       width: 180px;
       height: 55px;
     }
+  }
+}
+.icon-scroll {
+  width: 20px;
+  height: 35px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: inset 0 0 0 2px azure;
+  border-radius: 25px;
+  z-index: 10;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    margin-left: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+    border-radius: 100%;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20px);
   }
 }
