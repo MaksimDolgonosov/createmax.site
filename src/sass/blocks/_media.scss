@@ -8,6 +8,11 @@
       letter-spacing: 1.3px;
       line-height: 95px;
     }
+    &__photo {
+      img {
+        object-fit: cover;
+      }
+    }
     &__text {
       font-size: 22px;
     }
@@ -585,5 +590,12 @@
         text-align: center;
       }
     }
+  }
+}
+
+// Media by height <------------------------------------------------------------------>
+@media (min-height: 870px) {
+  .promo {
+    height: 788px;
   }
 }
