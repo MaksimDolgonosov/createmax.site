@@ -21,12 +21,21 @@
     top: 0;
     left: 0;
     width: 345px;
+    width: 50%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(225, 0, 255, 1) 0, rgba(21, 144, 238, 1) 45% 85%);
+    // background: linear-gradient(45deg, rgba(225, 0, 255, 1) 0, rgba(21, 144, 238, 1) 45% 85%);
+    background: rgba(0, 0, 0, 0.9);
     z-index: 100;
     transition: all 0.6s;
-    padding-top: 140px;
-    padding-left: 40px;
+    // padding-top: 140px;
+    // padding-left: 40px;
+    // nav {
+    //   margin: 50% 0;
+    // }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   &__close {
@@ -38,26 +47,30 @@
 
   &__list {
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   &__link {
     position: relative;
     margin-bottom: 15px;
-    margin-left: 35px;
+    // margin-left: 35px;
 
-    &:before {
-      content: "";
-      position: absolute;
-      left: -35px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 15px;
-      height: 15px;
-      border-radius: 100%;
-      border: 1px solid #ffffff;
-      margin-right: 20px;
-      cursor: pointer;
-    }
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   left: -35px;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    //   width: 15px;
+    //   height: 15px;
+    //   border-radius: 100%;
+    //   border: 1px solid #ffffff;
+    //   margin-right: 20px;
+    //   cursor: pointer;
+    // }
 
     &:hover {
       &:before {
@@ -69,8 +82,8 @@
       text-transform: uppercase;
       text-decoration: none;
       color: $text_color;
-      font-size: 24px;
-      line-height: 36px;
+      font-size: 28px;
+      line-height: 40px;
     }
   }
 
@@ -90,7 +103,7 @@
     transform: rotate(90deg);
 
     path {
-      fill: black;
+      fill: azure;
     }
   }
 
@@ -100,8 +113,8 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: white;
-    opacity: 0.75;
+    // background-color: rgb(0, 0, 0);
+    // opacity: 0.75;
     z-index: 4;
   }
 }

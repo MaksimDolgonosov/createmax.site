@@ -173,6 +173,28 @@
         // line-height: 21px;
         color: white;
         font-weight: 400;
+        position: relative; /* Для позиционирования блика */
+        overflow: hidden; /* Чтобы блик не выходил за пределы кнопки */
+        &:hover {
+          opacity: 0.85;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -100%; /* Изначально вне кнопки */
+          width: 50%;
+          height: 100%;
+          background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0) 100%
+          );
+          transform: skewX(-25deg); /* Поворот блика */
+          opacity: 0; /* Сначала блик не видим */
+          animation: shine 2s linear infinite;
+        }
       }
 
       &-policy {
