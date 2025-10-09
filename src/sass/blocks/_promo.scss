@@ -94,6 +94,15 @@
     z-index: 16;
     color: azure;
     font-weight: 300;
+    a {
+      color: #1590ee;
+      text-decoration: none;
+      cursor: pointer;
+      background: linear-gradient(90deg, #e100ff 0%, #1590ee 100%);
+      background-clip: text;
+      color: transparent;
+      font-weight: 500;
+    }
   }
 
   &__subtitle {
