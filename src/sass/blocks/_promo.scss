@@ -4,15 +4,9 @@
   background: url("../img/newImages/main-gradient.png") no-repeat 50% / cover;
   background-color: #111723;
   margin-top: 82px;
-  // padding-top: 110px;
-  // box-shadow: 0 10px 5px rgb(59, 59, 59);
   border-bottom: 1px solid #414a5a;
   & .container {
-    // width: 50%;
     height: 100%;
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
   }
   &__main {
     width: 100%;
@@ -33,47 +27,36 @@
     height: 100%;
   }
   &__photo {
-    background: url("../img/DOCTYPE.png");
+    position: relative;
+    // background: url("../img/DOCTYPE.png");
 
-    background-repeat: no-repeat;
-    background-position: start center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    // box-shadow: 0px 0px 20px 1px rgb(38, 27, 54) inset;
-    // opacity: 0.5;
-    // position: relative;
-    // align-self: flex-end;
+    // background-repeat: no-repeat;
+    // background-position: start center;
+    // background-size: cover;
+    // display: flex;
+    // justify-content: center;
+    // align-items: flex-end;
     width: 45%;
     height: 100%;
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   display: block; /* Or 'block' depending on desired layout */
-    //   width: 100%;
-    //   height: 100%;
+    pre {
+      color: azure;
+      code {
+        color: azure;
+        width: 100%;
+      }
+    }
 
-    // }
     img {
-      // display: block;
+      position: absolute;
+      top: 0;
       width: 100%;
       height: 100%;
       object-fit: contain;
-
-      // width: 520px;
-      // height: 600px;
     }
   }
   &__title {
-    display: inline-block;
+    display: block;
     width: 100%;
-    // position: relative;
-    // color: rgb(247, 247, 247);
-    //text-shadow: rgb(29, 29, 29) 0px 0px 15px;
-    //background: linear-gradient(90deg, #f42a8b 0%, #1f89db 100%);
     background: linear-gradient(90deg, #e100ff 0%, #1590ee 100%);
     background-clip: text;
     color: transparent;
@@ -111,33 +94,13 @@
     position: relative;
     @include before_circle;
     z-index: 2;
-
-    // &::before {
-    //     content: "";
-    //     background: url("../img/mini-photo.jpg");
-    //     position: absolute;
-    //     width: 160px;
-    //     height: 160px;
-    //     border-radius: 100%;
-    //     top: 25px;
-    // }
   }
-
-  // h1 {
-  //   // margin-top: 20px;
-  //   margin-bottom: 25px;
-  //   color: rgb(240, 240, 240);
-  // }
 
   &__btns {
     margin-top: 70px;
-    // margin-left: 20px;
-    // margin-bottom: 30px;
-    //  width: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // border-radius: 20px;
   }
 
   .promo__link {
