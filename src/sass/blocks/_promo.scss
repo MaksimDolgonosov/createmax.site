@@ -38,11 +38,14 @@
     // align-items: flex-end;
     width: 45%;
     height: 100%;
+    overflow: hidden;
     pre {
       color: azure;
       code {
-        color: azure;
+        color: #e100ffad;
         width: 100%;
+        font-size: 14px;
+        line-height: 17px;
       }
     }
 
