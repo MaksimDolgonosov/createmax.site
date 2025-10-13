@@ -208,3 +208,40 @@ window.addEventListener("DOMContentLoaded", () => {
 //     clickable: false,
 //   },
 // });
+
+// Печать текста
+
+function typeWritter(element, defaultSpeed=40) {
+    return new Promise((resolve) => {
+        const fullText = element.textContent;
+        element.textContent = "";
+        const cursor = document.createElement("span");
+        cursor.classList.add("cursor");
+        cursor.textContent = "|";
+        element.appendChild(cursor);
+        // const speed = defaultSpeed;
+        let i = 0;
+        function type() {
+            if (i < fullText.length) {
+                element.textContent = fullText.slice(0, i);
+                element.appendChild(cursor);
+                i++;
+                setTimeout(type, defaultSpeed)
+            } else {
+                cursor.remove();
+                resolve();
+            }
+            
+        }
+        type();
+    });
+}
+
+
+async function animateTyping() {
+const el = document.querySelector("[data-typewriter]");
+el.classList.add("visible-text");
+    await typeWritter(el);
+}
+
+animateTyping();
