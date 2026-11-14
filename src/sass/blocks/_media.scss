@@ -544,10 +544,6 @@
     margin-top: 100px;
     .background {
       height: 350px;
-      svg {
-        max-height: 420px;
-        min-height: 330px;
-      }
     }
     ul {
       li {
@@ -579,10 +575,6 @@
   footer {
     .background {
       height: 420px;
-      svg {
-        max-height: 420px;
-        min-height: 380px;
-      }
     }
     .links {
       flex-direction: column;

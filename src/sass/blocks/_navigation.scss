@@ -68,6 +68,7 @@
         // line-height: 80px;
         display: block;
         background: linear-gradient(90deg, #e100ff 0%, #1590ee 100%);
+        -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
         font-size: 70px;
@@ -83,7 +84,10 @@
       &#logo {
         font-weight: 400;
         // font-style: italic;
-        font-family: "Playpen Sans";
+        font-family: "Playpen Sans", "Roboto", sans-serif;
+        span {
+          font-family: inherit;
+        }
       }
       &#lang {
         display: flex;

@@ -6,6 +6,19 @@ window.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#year").textContent = `${new Date().getFullYear()}`
 
+    const footer = document.querySelector("footer");
+    const waveHost = footer && footer.querySelector(".background");
+    if (footer && waveHost && "IntersectionObserver" in window) {
+        const waveObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                footer.classList.toggle("is-offscreen", !entry.isIntersecting);
+            });
+        }, { rootMargin: "120px 0px" });
+        waveObserver.observe(waveHost);
+    } else if (footer) {
+        footer.classList.remove("is-offscreen");
+    }
+
     hamburger.addEventListener("click", () => {
         menu.classList.add("active");
     });
