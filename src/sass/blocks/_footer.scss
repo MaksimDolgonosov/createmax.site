@@ -58,6 +58,10 @@ footer {
     gap: 30px;
     width: 100%;
   }
+  &.is-offscreen .footer-wave {
+    animation-play-state: paused;
+  }
+
   .background {
     position: absolute;
     overflow: hidden;
@@ -67,18 +71,29 @@ footer {
     bottom: -69px;
     translate: -50% 0;
     width: 100%;
-    // height: 100%;
     height: 480px;
-    svg {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      max-height: 520px;
-      min-height: 400px;
-      transform: scaleY(3) scaleX(2.25);
-      transform-origin: bottom;
-      pointer-events: none;
-    }
+    pointer-events: none;
+  }
+
+  .footer-wave {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .footer-wave--slow {
+    animation: footer-wave-drift 8s ease-in-out infinite;
+  }
+
+  .footer-wave--mid {
+    animation: footer-wave-drift 6s ease-in-out infinite reverse;
+  }
+
+  .footer-wave--fast {
+    animation: footer-wave-drift 4s ease-in-out infinite;
   }
 
   ul {
@@ -123,14 +138,26 @@ footer {
 
   .socials a {
     font-size: 24px;
-    // background: rgb(255, 255, 255 / 6%);
-    backdrop-filter: blur(10px);
-    // display: grid;
-    // place-items: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     color: white;
     text-decoration: none;
+  }
+}
+
+@keyframes footer-wave-drift {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  footer .footer-wave {
+    animation: none;
   }
 }

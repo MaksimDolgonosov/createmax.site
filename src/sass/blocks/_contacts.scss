@@ -45,6 +45,7 @@
   &__subtitle {
     display: block;
     background: linear-gradient(90deg, #e100ff 0, #1590ee 100%);
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     font-weight: 500;
@@ -71,16 +72,7 @@
     margin-left: 40px;
     color: azure;
     &.after-logo {
-      &::after {
-        content: "";
-        position: absolute;
-        background-image: url("../../icons/contact-icon.svg");
-        background-repeat: no-repeat;
-        top: 5px;
-        left: -38px;
-        right: 0;
-        bottom: 0;
-      }
+      margin-left: 0;
     }
     &.without-logo {
       margin-left: 0;
